@@ -1,0 +1,40 @@
+properties
+# =========================================================
+# APPLICATION
+# =========================================================
+
+spring.application.name=secure-student-management-system
+
+
+# =========================================================
+# DATABASE
+# =========================================================
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/database_name
+spring.datasource.username=database_username
+spring.datasource.password=database_password
+
+
+# =========================================================
+# JPA / HIBERNATE
+# =========================================================
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+
+# =========================================================
+# SERVER
+# =========================================================
+
+server.port=8081
+
+
+# =========================================================
+# JWT
+# =========================================================
+
+app.jwt.secret=SecureStudentManagementSystemSecretKey2026VeryLongSecretKey
+app.jwt.expiration=900000
+jwt.refresh-expiration=604800000
